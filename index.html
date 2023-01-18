@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovieDesu - Web Nonton Film</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+<body style="background-color: black; margin: 0; padding: 0;">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+        <div class="container-fluid ms-4 me-4">
+          <a class="navbar-brand mt-1 h1 text-light" href="#" >MovieDesu</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#popular">Popular Film</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  More
+                </a>
+                <ul class="dropdown-menu text-light">
+                  <li><a class="dropdown-item" href="#explore">Explore Movie</a></li>
+                  <li><a class="dropdown-item" href="./assets/login/index.html">Sign In</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-danger" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <!-- End -->
+
+
+      <!-- Caraosel -->
+      <div class="row row-cols-md-2 row-cols-1" style="display: flex; flex-direction:row;">
+      <div id="carouselExampleCaptions" class="carousel slide w-50 position-relative start-0 ms-4" >
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div> 
+        <div class="carousel-inner mt-4">
+          <div class="carousel-item active">
+            <img src="./assets/img/1 (9).jpg" class="d-block w-100" alt="..." style="border-radius: 30px;">
+            <div class="carousel-caption">
+              <h5>Film Horor Terbaru</h5>
+              <p>Lihatlah kumpulan Film yang menantang adrenalin anda.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/img/1 (24).jpg" class="d-block w-100" alt="..." style="border-radius: 30px;"> 
+            <div class="carousel-caption">
+              <h5>Jelajahi Misteri Dunia</h5>
+              <p>Kumpulan misteri yang mengguncang dunia dapat anda tonton!</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/img/1 (11).jpg" class="d-block w-100" alt="..." style="border-radius: 30px;">
+            <div class="carousel-caption">
+              <h5>Tonton dengan Gratis</h5>
+              <p>Anda dapat menonton berbagai tayangan premium dengan gratis.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/img/1 (22).jpg" class="d-block w-100" alt="..." style="border-radius: 30px;">
+            <div class="carousel-caption">
+              <h5>Jadilah Superhero</h5>
+              <p>Penyelamat dunia selalu hadir dimanapun bahaya mengancam.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!-- end -->
+
+      <!-- list -->
+.
+.
+      <ol class="text-list list-group list-group-numbered ms-4 mt-4 " style="width: 600px;">
+        <a class="link-trailer" href="https://youtu.be/RvFriVpla_A">
+        <li class="list-group-item d-flex justify-content-between align-items-start text-light bg-dark">
+          <img src="./assets/img/1 (14).jpg" alt="" class="list">
+          <div class="text-hero ms-2 me-auto">
+            <div class="fw-bold">Quantumania</div>
+            The Best Movies and Series in January
+          </div>
+          <span class="badge bg-danger rounded-pill">Play Trailer</span>
+        </li>
+        </a>
+        <a class="link-trailer" href="https://youtu.be/GFQi8tD-NeU">
+        <li class="list-group-item d-flex justify-content-between align-items-start text-light bg-dark">
+          <img src="./assets/img/Beckett.jpg" alt="" class="list">
+          <div class="text-hero ms-2 me-auto">
+            <div class="fw-bold">Becket</div>
+            Following a tragic car accident in Greece
+          </div>
+          <span class="badge bg-danger rounded-pill">Play Trailer</span>
+        </li>
+        </a>
+        <a class="link-trailer" href="https://youtu.be/N1cOR0sRRIw">
+        <li class="list-group-item d-flex justify-content-between align-items-start text-light bg-dark">
+          <img src="./assets/img/1 (5).jpg" alt="" class="list">
+          <div class="text-hero ms-2 me-auto">
+            <div class="fw-bold">Servant</div>
+            A Philadelphia couple is in mourning after an unspeakable tragedy
+          </div>
+          <span class="badge bg-danger rounded-pill">Play Trailer</span>
+        </li>
+        </a>
+      </ol>
+      </div>
+      <!-- End -->
+
+      <!-- content -->
+      <!-- judul -->
+      <div class="judul">
+      <h3 class="text-light mt-4" style="text-align: center;" id="popular">Popular this Month</h3>
+      <div class="garis"></div>
+      </div>
+      <!-- end -->
+      <div class="row row-cols-3 row-cols-md-6 g-3 m-4 text-light">
+        <div class="col">
+          <div class="card" style="background-color: rgb(31, 31, 31) ;">
+            <img src="./assets/img/1 (5).jpg" class=" card-img-top images" alt="...">
+            <div class="card-body">
+              <h6 class="card-title" style="margin-top: -10px ;"> Servant</h6>
+            </div>
+            <div class="btn text-light btn-danger" style="font-size:12px; padding:2px; margin:5px; margin-top:-15px;">Watch Movie...</div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="background-color: rgb(31, 31, 31) ;">
+            <img src="./assets/img/1 (10).jpg" class=" card-img-top images" alt="...">
+            <div class="card-body">
+              <h6 class="card-title" style="margin-top: -10px ;">Beau is Afraid</h6>
+            </div>
+            <div class="btn text-light btn-danger" style="font-size:12px; padding:2px; margin:5px; margin-top:-15px;">Watch Movie...</div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="background-color: rgb(31, 31, 31) ;">
+            <img src="./assets/img/1 (13).jpg" class=" card-img-top images" alt="...">
+            <div class="card-body">
+              <h6 class="card-title" style="margin-top: -10px ;">YellowJackets</h6>
+            </div>
+            <div class="btn text-light btn-danger" style="font-size:12px; padding:2px; margin:5px; margin-top:-15px;">Watch Movie...</div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="background-color: rgb(31, 31, 31) ;">
+            <img src="./assets/img/1 (14).jpg" class=" card-img-top images" alt="...">
+            <div class="card-body">
+              <h6 class="card-title" style="margin-top: -10px ;">Quantumania</h6>
+            </div>
+            <div class="btn text-light btn-danger" style="font-size:12px; padding:2px; margin:5px; margin-top:-15px;">Watch Movie...</div>
+          </div>
+        </div>
+        <div class="col">
+            <div class="card" style="background-color: rgb(31, 31, 31) ;">
+              <img src="./assets/img/1 (17).jpg" class=" card-img-top images" alt="...">
+              <div class="card-body">
+                <h6 class="card-title" style="margin-top: -10px ;">Sharper</h6>
+              </div>
+              <div class="btn text-light btn-danger" style="font-size:12px; padding:2px; margin:5px; margin-top:-15px;">Watch Movie...</div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="background-color: rgb(31, 31, 31) ;">
+              <img src="./assets/img/1 (19).jpg" class=" card-img-top images" alt="...">
+              <div class="card-body">
+                <h6 class="card-title" style="margin-top: -10px ;">Its Me, Margaret</h6>
+              </div>
+              <div class="btn text-light btn-danger" style="font-size:12px; padding:2px; margin:5px; margin-top:-15px;">Watch Movie...</div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="background-color: rgb(31, 31, 31) ;">
+              <img src="./assets/img/1 (20).jpg" class=" card-img-top images" alt="...">
+              <div class="card-body">
+                <h6 class="card-title" style="margin-top: -10px ;">Evil Dead Rise</h6>
+              </div>
+              <div class="btn text-light btn-danger" style="font-size:12px; padding:2px; margin:5px; margin-top:-15px;">Watch Movie...</div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="background-color: rgb(31, 31, 31) ;">
+              <img src="./assets/img/Oxygen.jpg" class=" card-img-top images" alt="...">
+              <div class="card-body">
+                <h6 class="card-title" style="margin-top: -10px ;">Oxygen</h6>
+              </div>
+              <div class="btn text-light btn-danger" style="font-size:12px; padding:2px; margin:5px; margin-top:-15px;">Watch Movie...</div>
+            </div>
+          </div><div class="col">
+            <div class="card" style="background-color: rgb(31, 31, 31) ;">
+              <img src="./assets/img/The-8th-Night.jpg" class=" card-img-top images" alt="...">
+              <div class="card-body">
+                <h6 class="card-title" style="margin-top: -10px ;">The 8th Night</h6>
+              </div>
+              <div class="btn text-light btn-danger" style="font-size:12px; padding:2px; margin:5px; margin-top:-15px;">Watch Movie...</div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="background-color: rgb(31, 31, 31) ;">
+              <img src="./assets/img/The-Heartbreak-Club.jpg" class=" card-img-top images" alt="...">
+              <div class="card-body">
+                <h6 class="card-title" style="margin-top: -10px ;">Sobat Ambyar</h6>
+              </div>
+              <div class="btn text-light btn-danger" style="font-size:12px; padding:2px; margin:5px; margin-top:-15px;">Watch Movie...</div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="background-color: rgb(31, 31, 31) ;">
+              <img src="./assets/img/kate.jpg" class=" card-img-top images" alt="..." >
+              <div class="card-body">
+                <h6 class="card-title" style="margin-top: -10px ;">Kate</h6>
+              </div>
+              <div class="btn text-light btn-danger" style="font-size:12px; padding:2px; margin:5px; margin-top:-15px;">Watch Movie...</div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="background-color: rgb(31, 31, 31) ;">
+              <img src="./assets/img/Beckett.jpg" class=" card-img-top images" alt="...">
+              <div class="card-body">
+                <h6 class="card-title" style="margin-top: -10px ;">Becket</h6>
+              </div>
+              <div class="btn text-light btn-danger" style="font-size:12px; padding:2px; margin:5px; margin-top:-15px;">Watch Movie...</div>
+            </div>
+          </div>
+        </div>
+
+      <!-- end -->
+
+        <!-- judul -->
+        <div class="judul">
+          <h3 class="text-light mt-4" style="text-align: center;" id="explore">Explore Movies & TV shows
+          </h3>
+          <div class="garis"></div>
+          </div>
+          <!-- end -->
+          <div class="row row-cols-3 row-cols-md-6 g-3 m-4 text-light">
+            <div class="col">
+              <div class="card" style="background-color: rgb(31, 31, 31) ;">
+                <img src="./assets/img/The-School-of-Good-and-Evil.jpg" class=" card-img-top images" alt="...">
+                <div class="card-body">
+                  <h6 class="card-title" style="margin-top: -10px ;"> School of God and Devil</h6>
+                </div>
+                <div class="btn text-light btn-danger" style="font-size:12px; padding:2px; margin:5px; margin-top:-15px;">Watch Movie...</div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="background-color: rgb(31, 31, 31) ;">
+                <img src="./assets/img/Outside-the-Wire.jpg" class=" card-img-top images" alt="...">
+                <div class="card-body">
+                  <h6 class="card-title" style="margin-top: -10px ;">Outside the Wire</h6>
+                </div>
+                <div class="btn text-light btn-danger" style="font-size:12px; padding:2px; margin:5px; margin-top:-15px;">Watch Movie...</div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="background-color: rgb(31, 31, 31) ;">
+                <img src="./assets/img/Incantation.jpg" class=" card-img-top images" alt="...">
+                <div class="card-body">
+                  <h6 class="card-title" style="margin-top: -10px ;">Incantation</h6>
+                </div>
+                <div class="btn text-light btn-danger" style="font-size:12px; padding:2px; margin:5px; margin-top:-15px;">Watch Movie...</div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="background-color: rgb(31, 31, 31) ;">
+                <img src="./assets/img/1 (14).jpg" class=" card-img-top images" alt="...">
+                <div class="card-body">
+                  <h6 class="card-title" style="margin-top: -10px ;">Quantumania</h6>
+                </div>
+                <div class="btn text-light btn-danger" style="font-size:12px; padding:2px; margin:5px; margin-top:-15px;">Watch Movie...</div>
+              </div>
+            </div>
+            <div class="col">
+                <div class="card" style="background-color: rgb(31, 31, 31) ;">
+                  <img src="./assets/img/Finding-Ohana.jpg" class=" card-img-top images" alt="...">
+                  <div class="card-body">
+                    <h6 class="card-title" style="margin-top: -10px ;">Finding Ohana</h6>
+                  </div>
+                  <div class="btn text-light btn-danger" style="font-size:12px; padding:2px; margin:5px; margin-top:-15px;">Watch Movie...</div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card" style="background-color: rgb(31, 31, 31) ;">
+                  <img src="./assets/img/1 (19).jpg" class=" card-img-top images" alt="...">
+                  <div class="card-body">
+                    <h6 class="card-title" style="margin-top: -10px ;">Its Me, Margaret</h6>
+                  </div>
+                  <div class="btn text-light btn-danger" style="font-size:12px; padding:2px; margin:5px; margin-top:-15px;">Watch Movie...</div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card" style="background-color: rgb(31, 31, 31) ;">
+                  <img src="./assets/img/Enola-Holmes.jpg" class=" card-img-top images" alt="...">
+                  <div class="card-body">
+                    <h6 class="card-title" style="margin-top: -10px ;">Enola Holmes</h6>
+                  </div>
+                  <div class="btn text-light btn-danger" style="font-size:12px; padding:2px; margin:5px; margin-top:-15px;">Watch Movie...</div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card" style="background-color: rgb(31, 31, 31) ;">
+                  <img src="./assets/img/Oxygen.jpg" class=" card-img-top images" alt="...">
+                  <div class="card-body">
+                    <h6 class="card-title" style="margin-top: -10px ;">Oxygen</h6>
+                  </div>
+                  <div class="btn text-light btn-danger" style="font-size:12px; padding:2px; margin:5px; margin-top:-15px;">Watch Movie...</div>
+                </div>
+              </div><div class="col">
+                <div class="card" style="background-color: rgb(31, 31, 31) ;">
+                  <img src="./assets/img/The-8th-Night.jpg" class=" card-img-top images" alt="...">
+                  <div class="card-body">
+                    <h6 class="card-title" style="margin-top: -10px ;">The 8th Night</h6>
+                  </div>
+                  <div class="btn text-light btn-danger" style="font-size:12px; padding:2px; margin:5px; margin-top:-15px;">Watch Movie...</div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card" style="background-color: rgb(31, 31, 31) ;">
+                  <img src="./assets/img/Athena.jpg" class=" card-img-top images" alt="...">
+                  <div class="card-body">
+                    <h6 class="card-title" style="margin-top: -10px ;">Athena</h6>
+                  </div>
+                  <div class="btn text-light btn-danger" style="font-size:12px; padding:2px; margin:5px; margin-top:-15px;">Watch Movie...</div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card" style="background-color: rgb(31, 31, 31) ;">
+                  <img src="./assets/img/Army-of-the-Dead-1.jpg" class=" card-img-top images" alt="..." >
+                  <div class="card-body">
+                    <h6 class="card-title" style="margin-top: -10px ;">Army of the Dead</h6>
+                  </div>
+                  <div class="btn text-light btn-danger" style="font-size:12px; padding:2px; margin:5px; margin-top:-15px;">Watch Movie...</div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card" style="background-color: rgb(31, 31, 31) ;">
+                  <img src="./assets/img/All-Quiet-on-the-Western-Front.jpg" class=" card-img-top images" alt="...">
+                  <div class="card-body">
+                    <h6 class="card-title" style="margin-top: -10px ;">Quiet on Western Front</h6>
+                  </div>
+                  <div class="btn text-light btn-danger" style="font-size:12px; padding:2px; margin:5px; margin-top:-15px;">Watch Movie...</div>
+                </div>
+              </div>
+            </div>
+    
+          <!-- end -->
+          <div class="sign">
+          <a href="./assets/login/index.html" ><div class="btn text-light btn-danger m-auto" style="font-size:15px; padding:5px; font-weight: 500;">Sign in for more access</div></a>
+          </div>
+          <!-- <footer>
+            <div class="sosmed">
+              <a href=""><i class="fa-brands fa-facebook"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-youtube"></i></a>
+            </div>
+            <small>Copyr</small>
+
+          </footer> -->
+
+          <footer class="footer-distributed">
+
+            <div class="footer-left">
+              <div class="logo">
+                <div>Movie</div>
+                <div class="two">Desu</div>
+              </div>
+              <h4>Web<span>NontonGratis</span></h4>
+      
+              <p class="footer-links">
+                <a href="#">Home</a>
+                |
+                <a href="#popular">Popular Film</a>
+                |
+                <a href="#explore">Explore Film</a>
+                |
+                <a href="./assets/login/index.html">Sign In</a>
+              </p>
+      
+              <p class="footer-company-name">Copyright © Kitsuyako 2023 .</p>
+            </div>
+
+            <input type="text">
+      
+            <div class="footer-center">
+              <div>
+                <i class="fa-solid fa-location-dot"></i>
+                <p><span>309 - Rupa Solitaire,
+                   Bldg. No. A - 1, Sector - 1</span>
+                  In Your Heart</p>
+              </div>
+      
+              <div>
+                <i class="fa-solid fa-phone"></i>
+               <p>+62 847-8734-8734</p>
+              </div>
+              <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="https://youtu.be/xm3YgoEiEDc">Support Me</a></p>
+              </div>
+            </div>
+            <div class="footer-right">
+              <p class="footer-company-about">
+                <span>About the websites</span>
+                Kami menyediakan berbagai film, dan bisa menyediakan film yang anda inginkan dengan merequestnya!</p>
+              <div class="footer-icons">
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-youtube"></i></a>
+              </div>
+            </div>
+          </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+</body>
+</html>
