@@ -113,12 +113,12 @@ nav{
 
 /* responsive */
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 500px){
 	.carousel{
 		align-items: center;
 		align-content: center;
 		position: relative;
-		min-width: 300px;
+		min-width: 400px;
 		max-width: 560px;
 		margin-right: 50px;
 	}
@@ -154,7 +154,7 @@ nav{
 	
 
 	.list-group-item{
-		min-width: 350px;
+		min-width: 300px;
 		max-width: 370px;
 		margin: auto;
 		margin-left: 7px;
